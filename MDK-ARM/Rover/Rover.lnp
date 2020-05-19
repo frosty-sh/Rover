@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"rover\startup_stm32f103x6.o"
+"rover\main.o"
+"rover\stm32f1xx_it.o"
+"rover\stm32f1xx_hal_msp.o"
+"rover\motorset.o"
+"rover\movementcontroller.o"
+"rover\ultrasonic.o"
+"rover\stm32f1xx_hal_gpio_ex.o"
+"rover\stm32f1xx_hal_tim.o"
+"rover\stm32f1xx_hal_tim_ex.o"
+"rover\stm32f1xx_hal.o"
+"rover\stm32f1xx_hal_rcc.o"
+"rover\stm32f1xx_hal_rcc_ex.o"
+"rover\stm32f1xx_hal_gpio.o"
+"rover\stm32f1xx_hal_dma.o"
+"rover\stm32f1xx_hal_cortex.o"
+"rover\stm32f1xx_hal_pwr.o"
+"rover\stm32f1xx_hal_flash.o"
+"rover\stm32f1xx_hal_flash_ex.o"
+"rover\stm32f1xx_hal_exti.o"
+"rover\stm32f1xx_hal_uart.o"
+"rover\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Rover\Rover.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Rover.map" -o Rover\Rover.axf
