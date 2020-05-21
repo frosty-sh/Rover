@@ -1,0 +1,6 @@
+**/**.synctex.gz
+**/**.log
+**/**.fls
+**/**.fdb_latexmk
+**/**.aux
+.vscode/settings.json
